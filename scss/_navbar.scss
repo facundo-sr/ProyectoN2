@@ -1,0 +1,30 @@
+  #botonera img {
+    width: 125px;
+  }
+  ul{
+    li{
+         a { 
+          font-size: 1.8em;
+          color: rgb(255, 255, 255);
+          text-decoration:none;
+          /*subrayado animado*/ 
+          background-image: linear-gradient(currentColor, currentColor);
+          background-position: 0% 100%;
+          background-repeat:no-repeat;
+          background-size: 0% 2px;
+          transition: background-size.8s;
+          text-shadow: 2px 2px black;
+        }
+          a:hover {
+          color: gray;
+          font-weight: 600;
+          /* subrayado animado */
+          background-size: 100% 2px;
+        }
+
+       }
+  }
+    
+  
+
+  

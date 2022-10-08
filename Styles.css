@@ -8,7 +8,7 @@
     
 body {   
    background-color: #2b2a29;
-   background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  
+   background: linear-gradient(to right, #4d4b4c, #FF8C00, #848585);  
 }
  
     
@@ -18,12 +18,12 @@ body {
          
 }
 #botonera img {
-   width: 150px;
+   width: 125px;
 }
   
 #botonera ul li a {
    font-size: 1.8em;
-   color: rgb(255, 255, 255);
+   color: antiquewhite;
    text-decoration:none;
    /*subrayado animado*/ 
    background-image: linear-gradient(currentColor, currentColor);
@@ -43,25 +43,31 @@ body {
 
 .imagen {
    height: 100vh;
+   height: 38vw;
    display: flex;
    align-items: end;
    justify-content: center;
-   background:linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url(Multimedia/img/imagen1.jpg);
    background-size: cover;
    background-position: center;
 }  
- 
 .texto {
    display:flex;
    justify-content: center;
    padding-top: 30px; 
-   color: white;
+   color: antiquewhite;
    text-align:center;
    padding-bottom: 150px;
    margin: 35px;
 }
-.container-header {
-   padding-top: 10px;
+
+.carousel-inner {
+   height: 450px;
+   margin-top: 40px;
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: contain;
+  border-radius: 16px;
 }
   /*aticulos y section*/
     
@@ -76,7 +82,7 @@ body {
 .derechos {
    display: flex;
    margin: 2px;
-   color: #fbf5f5;
+   color: antiquewhite;
    justify-content:center;
    align-items: center;
 }
@@ -85,32 +91,33 @@ body {
 }
 
     /* comienza css de clases y precios */
+
 .clases {
    margin: 150px;
 }
 .clases-y-precios {
    margin-top: 2.5em;
    text-align: center ;
-   color: aliceblue;
+   color: antiquewhite;
    font-size: 1em;
    text-shadow: 10px 2px 5px black;
    text-transform:uppercase;
 }
 figure  {
-   border: solid wheat;
+   border: solid antiquewhite;
    padding: 5px;
    display:inline-block;
 }
   
 figcaption {
    font-family: Roboto Condensed,sans-serif;
-   color: rgb(243, 231, 231);
+   color: antiquewhite;
    text-align: center;
    padding-bottom: 10px;
    font-size: 1.3em ;
 }
 .precio {
-   color: white;
+   color: antiquewhite;
    font-size:20px ;
    text-align: center;
 }
@@ -119,8 +126,8 @@ figcaption {
    padding: 0 20px;
    font-size: 1em;
    align-items: center;
-   color: #fff;
-   text-shadow: 1px 1px 1px #000;
+   color: antiquewhite;
+   text-shadow: 1px 1px 1px black;
    border-radius: 10px;
    background-color: red;
 }
@@ -143,7 +150,7 @@ figcaption {
 .headerNosotros {
    margin-top: 2.5em;
    text-align: center ;
-   color: aliceblue;
+   color: antiquewhite;
    font-size: 1em;
    text-shadow: 10px 2px 5px black;
    text-transform:uppercase;
@@ -151,16 +158,16 @@ figcaption {
 .recuadro p {
    margin: 3em;
    text-align: center;
-   color: rgb(215, 231, 231);
+   color: antiquewhite;
    font-size: 2.5em;
    text-decoration: solid;
-   text-shadow: 2px 1px #000;
+   text-shadow: 2px 1px black;
 }
    /*Stilo de Contacto*/
 
 .div-contacto {
    background: #181818;
-   color: #fff;
+   color: antiquewhite;
    line-height: 1.6;
    font-family: 'Quicksand', sans-serif;
    padding: 0 1.5em;
@@ -185,7 +192,7 @@ figcaption {
 }
   
 .contact-wrapper {
-   box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+   box-shadow: 0 0 20px 0 gray;
 }
 
 .contact-form {
@@ -218,7 +225,7 @@ figcaption {
    border: none;
    background: none;
    outline: 0;
-   color: #fff;
+   color: antiquewhite;
    border-bottom: 1px solid #ee882e;
 }
   
@@ -232,14 +239,14 @@ figcaption {
 .contact-form form button:hover,
 .contact-form form button:focus {
    background: #d63031;
-   color: #fff;
+   color: antiquewhite;
    transition: background-color 1s ease-out;
    outline: 0;
 }
   
   /* CONTACT INFO */
 .contact-info {
-   background: #000;
+   background: black;
    padding: 15px;
 }
   
