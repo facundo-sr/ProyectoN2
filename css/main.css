@@ -1,1 +1,297 @@
+@import url("https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Play & family= Roboto+Condensed:ital@0;1 & family= Roboto+Flex:opsz, wght@8..144,400;8..144,500;8..144,900 & family= Russo+One & display=swap");
+.clases {
+  margin: 150px;
+}
 
+.clases-y-precios {
+  margin-top: 2.5em;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 1em;
+  text-shadow: 10px 2px 5px black;
+  text-transform: uppercase;
+}
+
+figcaption {
+  font-family: "Roboto Condensed", sans-serif;
+  color: antiquewhite;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.precio {
+  color: antiquewhite;
+  font-size: 20px;
+  text-align: center;
+}
+
+.headerNosotros {
+  font-family: fantasy;
+  margin-top: 2.5em;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 1em;
+  text-shadow: 10px 2px 5px black;
+  text-transform: uppercase;
+}
+
+.recuadro p {
+  font-family: fantasy;
+  margin: 2.5em 2.5em 7.4em 2.5em;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 22px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  text-shadow: 2px 1px black;
+}
+@media (max-width: 564px) and (min-width: 600px) {
+  .recuadro p {
+    font-size: 16px;
+    margin: 2.5em 2.5em 4.2em 2.5em;
+  }
+}
+
+.carousel-inner {
+  height: 450px;
+  margin-top: 40px;
+}
+
+.carousel-item img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+}
+
+.clases {
+  margin: 150px;
+}
+.clases figure {
+  border: solid antiquewhite;
+  padding: 5px;
+  display: inline-block;
+}
+
+.comprar {
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1em;
+  align-items: center;
+  color: antiquewhite;
+  text-shadow: 1px 1px 1p black;
+  border-radius: 10px;
+  background-color: red;
+}
+.comprar:hover {
+  border: solid 10px red;
+  cursor: pointer;
+}
+
+.img-precio1, .img-precio2 {
+  height: 400px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-precio2 {
+  border-radius: 4xp;
+}
+
+.div-contacto {
+  background: black;
+  color: antiquewhite;
+  line-height: 1.6;
+  font-family: "Quicksand", sans-serif;
+  padding: 0 1.5em;
+  margin-top: 35px;
+}
+
+.container-contactos {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+.ul-contacto {
+  list-style: none;
+  padding: 0;
+}
+
+.logo-contacto {
+  text-align: center;
+  font-size: 3em;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 gray;
+}
+
+.contact-form {
+  background: black;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form .block {
+  grid-column: 1/3;
+}
+.contact-form form button {
+  background: #ee882e;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.contact-form form:hover, .contact-form form:focus {
+  background: gray;
+  color: antiquewhite;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+label {
+  display: block;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: black;
+  padding: 15px;
+}
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  text-align: left;
+}
+
+/*galeria*/
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.fot-a {
+  grid-area: fotoA;
+}
+
+.fot-b {
+  grid-area: fotoB;
+}
+
+.fot-c {
+  grid-area: fotoC;
+}
+
+.fot-d {
+  grid-area: fotoD;
+}
+
+.fot-e {
+  grid-area: fotoE;
+}
+
+.fot-f {
+  grid-area: fotoF;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 300px);
+  grid-template-areas: "fotoA" "fotoB" "fotoC" "fotoD" "fotoE" "fotoF";
+  gap: 5px;
+}
+
+@media (min-width: 768px) { /*tablet*/
+  #galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    grid-template-areas: "fotoA fotoB" "fotoA fotoC" "fotoA fotoD" "fotoE fotoF";
+  }
+}
+@media (min-width: 1200px) { /*desckop*/
+  #galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: "fotoA fotoB fotoC" "fotoA fotoD fotoC" "fotoA fotoE fotoF";
+  }
+}
+.pie {
+  display: flex;
+  background: black;
+  color: antiquewhite;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.derechos {
+  display: flex;
+  margin: 2px;
+  color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie h3 {
+  margin-top: 15px;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2b2a29;
+  background: linear-gradient(to right, #4d4b4c, #FF8C00, #848585);
+}
+
+.container .logo {
+  cursor: pointer;
+}
+
+#botonera {
+  background-image: url(../Multimedia/img/fondo.jpg);
+}
+#botonera img {
+  width: 125px;
+}
+#botonera ul li a {
+  font-size: 1.8em;
+  color: antiquewhite;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  text-shadow: 2px 2px black;
+  transition: background-8s;
+}
+#botonera ul li a:hover {
+  color: gray;
+  font-weight: 600;
+  /* subrayado animado */
+  background-size: 100% 2px;
+}
+
+button, input, textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: antiquewhite;
+  border-bottom: 1px solid #ee882e;
+}/*# sourceMappingURL=main.css.map */

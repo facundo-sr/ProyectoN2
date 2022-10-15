@@ -2,10 +2,8 @@
 @import "_vars";
 @import "_fonts";
 @import "commons";
-@import "_index";
 @import "_footer";
 @import "_navbar";
+@import "_mixins";
+   
 
-body {
-    background-color: red;
-}

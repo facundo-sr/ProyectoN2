@@ -1,0 +1,15 @@
+//mixins en commons
+
+@mixin butt-input-texta ($ancho,$relleno){
+   
+    width: $ancho;
+    padding: $relleno;
+    border: none;
+    background: none;
+    outline: 0;
+    color: $mainColor;
+    border-bottom: 1px solid $orange;
+}
+button,input,textarea {
+    @include butt-input-texta (100%,0.7em);  //mixin
+}

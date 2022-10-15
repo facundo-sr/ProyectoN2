@@ -1,30 +1,39 @@
-  #botonera img {
-    width: 125px;
+* {
+  font-family:'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+} 
+   
+body {   
+  background-color: #2b2a29;
+  background: linear-gradient(to right, #4d4b4c, #FF8C00, #848585);  
+}
+ .container {
+  .logo {
+    cursor: pointer;
   }
-  ul{
-    li{
-         a { 
-          font-size: 1.8em;
-          color: rgb(255, 255, 255);
-          text-decoration:none;
-          /*subrayado animado*/ 
-          background-image: linear-gradient(currentColor, currentColor);
-          background-position: 0% 100%;
-          background-repeat:no-repeat;
-          background-size: 0% 2px;
-          transition: background-size.8s;
-          text-shadow: 2px 2px black;
-        }
-          a:hover {
-          color: gray;
+ }
+ #botonera {
+  background-image: url(../Multimedia/img/fondo.jpg);
+   img {
+        width: 125px;
+   }
+   ul li a {
+         font-size: 1.8em;
+         color: $mainColor;
+         text-decoration:none;
+         background-image: linear-gradient(currentColor, currentColor);
+         background-position: 0% 100%;
+         background-repeat:no-repeat;
+         background-size: 0% 2px;
+         text-shadow: 2px 2px $secondaryColor;
+         transition: background-8s;
+         &:hover {
+          color:$terciaryColor;
           font-weight: 600;
           /* subrayado animado */
           background-size: 100% 2px;
         }
-
-       }
-  }
-    
-  
-
-  
+      }
+    }
+ 

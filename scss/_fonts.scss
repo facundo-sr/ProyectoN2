@@ -1,6 +1,47 @@
-//variables
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Play & family= Roboto+Condensed:ital@0;1 & family= Roboto+Flex:opsz, wght@8..144,400;8..144,500;8..144,900 & family= Russo+One & display=swap');
 
-$mainColor:antiquewhite;
-$secondaryColor: black;
-$terciaryColor:gray;
-$orange:#ee882e;
+.clases {
+    margin: 150px;
+}
+.clases-y-precios {
+    margin-top: 2.5em;
+    text-align: center ;
+    color: $mainColor;
+    font-size: 1em;
+    text-shadow: 10px 2px 5px $secondaryColor;
+    text-transform:uppercase;
+}
+ figcaption {
+    font-family: $fontPrimary;
+    color: $mainColor;
+    text-align: $text-c;
+    padding-bottom: 10px;
+    font-size: $text1ymedio;
+ }
+ .precio {
+    color: $mainColor;
+    font-size:20px ;
+    text-align: $text-c;
+ }
+ .headerNosotros {
+    font-family: fantasy;
+    margin-top: 2.5em;
+    text-align: $text-c ;
+    color: $mainColor;
+    font-size: 1em;
+    text-shadow: 10px 2px 5px $secondaryColor;
+    text-transform:uppercase;
+ }
+ .recuadro p {
+    font-family: fantasy;
+    margin: 2.5em 2.5em 7.4em 2.5em;
+    text-align: $text-c;
+    color: $mainColor;
+    font-size: 22px;
+    text-decoration: solid;
+    text-shadow: 2px 1px black;
+    @media (max-width:564px) and (min-width:600px) {
+      font-size: 16px;
+      margin: 2.5em 2.5em 4.2em 2.5em; ;
+    }
+ }

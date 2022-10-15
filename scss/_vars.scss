@@ -1,9 +1,30 @@
-$ColorPrincipal:  rgb(236,188,247,.6);
-$ColorSecundario: antiquewhite;
-$keyColor: violet;
+//variable
+$fontPrimary:'Roboto Condensed', sans-serif;
+$fontClases: Roboto Condensed,sans-serif;
+$fontContact:'Quicksand', sans-serif;
 
+//zisin fuentes
 $textLg: 3em;
 $textMd: 2em;
 $textSm: 1em;
+$text1ymedio:1.5em;
 
+//texto alineamientos
+$text-c: center;
+$text-j: justify;
+$text-l: left;
+$text-R: right;
+
+//flexbox
 $d-flex:flex;
+
+//colores
+$mainColor:antiquewhite;
+$secondaryColor: black;
+$terciaryColor:gray;
+$orange:#ee882e;
+$buttoncolor: red;
+$color-fondo:#2b2a29;
+$colorgradient-1:#4d4b4c;
+$colorgradient-2:#FF8C00;
+$colorgradient-3: #848585;
