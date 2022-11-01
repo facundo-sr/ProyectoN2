@@ -6,47 +6,56 @@
 $justifyContent: center;
 $alignitems:center;
 
-.carousel-inner {
-    height: 450px;
-    margin-top: 40px;
- }
- .carousel-item img {
-   height: 500px;
-   object-fit: contain;
-   border-radius: 16px;
- }
-.clases {
-    margin: 150px;
-  figure {
-        border: solid $mainColor;
-        padding: 5px;
-        display:inline-block;
- }
+//clases y precios
+.clases-y-precios h1 {
+   color:$mainColor;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+   margin-top: 10px;
+   text-shadow: black 2px 3px;
+}  
+.container-cards .card{
+   display: inline-block;
+   $justifyContent: center;
+   $alignitems:center;
+   background:black;
+   width: 330px;
+   height: 430px;
+   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+   margin: 50px;
+   text-align: center;
+   transition: all 0.25s;
+   &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+   }
+   img {
+      width: 330px;
+      height: 220px;
+      border-radius: 8px;
+   }
+   h4 {
+      font-weight: 600px;
+      color: $mainColor;
+      justify-items: center;
+   }
+   p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300px;
+      color: $mainColor;
+   }
+   a {
+      font-weight: 500px;
+      text-decoration: none;
+      color: #ed6e0d;
+      &:hover {
+         color: gray;
+      }
+   }
 }
-//button 
-.comprar {   
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: $textSm;
-    align-items: $alignitems;
-    color: $mainColor;
-    text-shadow: 1px 1px 1p $secondaryColor;
-    border-radius: 10px;
-    background-color: $buttoncolor;
-    &:hover {
-        border: solid 10px $buttoncolor;
-        cursor: pointer;
-    }
-}
-.img-precio1 {
-    height: 400px;
-    width: 500px;
-    object-fit: cover;
- }
- .img-precio2 {
-    @extend .img-precio1;                //@extend//
-    border-radius: 4xp;
- }
+
+ //contacto 
  .div-contacto {
     background: $secondaryColor;
     color: $mainColor;
@@ -73,38 +82,38 @@ $alignitems:center;
  }
    
  .contact-wrapper {
-    box-shadow: 0 0 20px 0 gray;
- }
+                   box-shadow: 0 0 20px 0 gray;
+                  }
  
- .contact-form {
-    background: $secondaryColor;
-    form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        p{
-          margin: 0;
-          padding: 1em;
-        }
-        .block {
-            grid-column: 1 / 3;
-        }
-       
-        button {
-            background: #ee882e;
-            border: 0;
-            text-transform: uppercase;
-            padding: 1em;}
-            &:hover,&:focus {
-                background: $terciaryColor;
-                color: $mainColor;
-                transition: background-color 1s ease-out;
-                outline: 0;
-            }
-        } 
-    }
+    .contact-form {
+                background: $secondaryColor;
+                form {
+                   display: grid;
+                   grid-template-columns: 1fr 1fr;
+                p{
+                   margin: 0;
+                   padding: 1em;
+                 }
+          .block {
+                  grid-column: 1 / 3;
+                 }
+         button {
+                 background: #ee882e;
+                 border: 0;
+                 text-transform: uppercase;
+                 padding: 1em;}
+                }
+   } 
     label { 
         display: block;
     }
+    input {
+      &:hover,&:focus {
+         background: $terciaryColor;
+         color: $mainColor;
+         transition: background-color 1s ease-out;
+         outline: 0;
+    } }
    /* CONTACT INFO */
  .contact-info {
     background: black;
@@ -121,8 +130,33 @@ main img{
     object-fit: cover;
     height: 100%;
     width: 100%; 
-    margin-top: 35px;
+    border-color: $secondaryColor 10px;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgba(23, 22, 22, 0.996);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: .2s all;
+      transform: scale(1.1);
+    }
  }
+  
+ /*section cards index*/
+
+ .p-4 .row article img {
+   &:hover {
+      background-color: rgba(23, 22, 22, 0.996);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: .2s all;
+      transform: scale(1.1);
+   }
+}
+ 
                 
  .fot-a{
     grid-area: fotoA;
@@ -160,7 +194,7 @@ main img{
     "fotoE"
     "fotoF";
      gap: 5px;
-        
+
  }
  @media (min-width:768px){  /*tablet*/
  #galeria{

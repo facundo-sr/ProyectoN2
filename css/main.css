@@ -1,31 +1,4 @@
 @import url("https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Play & family= Roboto+Condensed:ital@0;1 & family= Roboto+Flex:opsz, wght@8..144,400;8..144,500;8..144,900 & family= Russo+One & display=swap");
-.clases {
-  margin: 150px;
-}
-
-.clases-y-precios {
-  margin-top: 2.5em;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 1em;
-  text-shadow: 10px 2px 5px black;
-  text-transform: uppercase;
-}
-
-figcaption {
-  font-family: "Roboto Condensed", sans-serif;
-  color: antiquewhite;
-  text-align: center;
-  padding-bottom: 10px;
-  font-size: 1.5em;
-}
-
-.precio {
-  color: antiquewhite;
-  font-size: 20px;
-  text-align: center;
-}
-
 .headerNosotros {
   font-family: fantasy;
   margin-top: 2.5em;
@@ -53,51 +26,51 @@ figcaption {
   }
 }
 
-.carousel-inner {
-  height: 450px;
-  margin-top: 40px;
-}
-
-.carousel-item img {
-  height: 500px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 16px;
-}
-
-.clases {
-  margin: 150px;
-}
-.clases figure {
-  border: solid antiquewhite;
-  padding: 5px;
-  display: inline-block;
-}
-
-.comprar {
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1em;
-  align-items: center;
+.clases-y-precios h1 {
   color: antiquewhite;
-  text-shadow: 1px 1px 1p black;
-  border-radius: 10px;
-  background-color: red;
-}
-.comprar:hover {
-  border: solid 10px red;
-  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  text-shadow: black 2px 3px;
 }
 
-.img-precio1, .img-precio2 {
-  height: 400px;
-  width: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.container-cards .card {
+  display: inline-block;
+  background: black;
+  width: 330px;
+  height: 430px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 50px;
+  text-align: center;
+  transition: all 0.25s;
 }
-
-.img-precio2 {
-  border-radius: 4xp;
+.container-cards .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container-cards .card img {
+  width: 330px;
+  height: 220px;
+  border-radius: 8px;
+}
+.container-cards .card h4 {
+  font-weight: 600px;
+  color: antiquewhite;
+  justify-items: center;
+}
+.container-cards .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300px;
+  color: antiquewhite;
+}
+.container-cards .card a {
+  font-weight: 500px;
+  text-decoration: none;
+  color: #ed6e0d;
+}
+.container-cards .card a:hover {
+  color: gray;
 }
 
 .div-contacto {
@@ -150,15 +123,16 @@ figcaption {
   text-transform: uppercase;
   padding: 1em;
 }
-.contact-form form:hover, .contact-form form:focus {
+
+label {
+  display: block;
+}
+
+input:hover, input:focus {
   background: gray;
   color: antiquewhite;
   transition: background-color 1s ease-out;
   outline: 0;
-}
-
-label {
-  display: block;
 }
 
 /* CONTACT INFO */
@@ -178,7 +152,28 @@ main img {
      object-fit: cover;
   height: 100%;
   width: 100%;
-  margin-top: 35px;
+  border-color: black 10px;
+  border-radius: 5px;
+}
+main img:hover {
+  background-color: rgba(23, 22, 22, 0.996);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s all;
+  transform: scale(1.1);
+}
+
+/*section cards index*/
+.p-4 .row article img:hover {
+  background-color: rgba(23, 22, 22, 0.996);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s all;
+  transform: scale(1.1);
 }
 
 .fot-a {
@@ -229,22 +224,17 @@ main img {
 }
 .pie {
   display: flex;
-  background: black;
+  background: gray;
   color: antiquewhite;
   justify-content: space-evenly;
-  padding: 15px;
 }
 
 .derechos {
   display: flex;
-  margin: 2px;
   color: antiquewhite;
   justify-content: center;
   align-items: center;
-}
-
-.pie h3 {
-  margin-top: 15px;
+  background-color: black;
 }
 
 * {
@@ -266,24 +256,29 @@ body {
   background-image: url(../Multimedia/img/fondo.jpg);
 }
 #botonera img {
-  width: 125px;
+  width: 75px;
+  border-radius: 50px;
 }
 #botonera ul li a {
-  font-size: 1.8em;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  text-shadow: 2px 2px black;
-  transition: background-8s;
+  display: block;
+  padding: 12px 26px;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  text-shadow: #2b2a29 0px 3px 1px;
 }
 #botonera ul li a:hover {
-  color: gray;
-  font-weight: 600;
-  /* subrayado animado */
   background-size: 100% 2px;
+  color: orange;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-animation: 1s ms 1;
+          animation: 1s ms 1;
+  border-radius: 10px;
+}
+#botonera h5 {
+  color: antiquewhite;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 button, input, textarea {
@@ -293,5 +288,5 @@ button, input, textarea {
   background: none;
   outline: 0;
   color: antiquewhite;
-  border-bottom: 1px solid #ee882e;
+  border-bottom: 1px solid orange;
 }/*# sourceMappingURL=main.css.map */

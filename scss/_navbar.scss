@@ -1,39 +1,43 @@
 * {
-  font-family:'Roboto Condensed', sans-serif;
-  margin: 0;
-  padding: 0;
-} 
+   font-family:'Roboto Condensed', sans-serif;
+   margin: 0;
+   padding: 0;
+  } 
    
 body {   
-  background-color: #2b2a29;
-  background: linear-gradient(to right, #4d4b4c, #FF8C00, #848585);  
-}
- .container {
-  .logo {
-    cursor: pointer;
-  }
- }
+      background-color: #2b2a29;
+      background: linear-gradient(to right, #4d4b4c, #FF8C00, #848585);  
+     }
+.container {
+            .logo {
+                   cursor: pointer;
+                  }
+          }
  #botonera {
-  background-image: url(../Multimedia/img/fondo.jpg);
+            background-image: url(../Multimedia/img/fondo.jpg);
    img {
-        width: 125px;
-   }
+        width: 75px;
+        border-radius: 50px;
+       }
    ul li a {
-         font-size: 1.8em;
-         color: $mainColor;
-         text-decoration:none;
-         background-image: linear-gradient(currentColor, currentColor);
-         background-position: 0% 100%;
-         background-repeat:no-repeat;
-         background-size: 0% 2px;
-         text-shadow: 2px 2px $secondaryColor;
-         transition: background-8s;
-         &:hover {
-          color:$terciaryColor;
-          font-weight: 600;
-          /* subrayado animado */
-          background-size: 100% 2px;
-        }
-      }
+                   color:rgba(255,255,255,1);
+                   text-decoration: none;
+                   display: block;
+                   padding: 12px 26px;
+                   font-family: 'Oswald', sans-serif;
+                   font-size: 25px;
+                   text-shadow: #2b2a29 0px 3px 1px ;
+                     &:hover {
+                      background-size: 100% 2px;
+                      color: orange;  
+                      background: rgba(0,0,0,0.2);
+                      animation:1s ms 1;
+                      border-radius: 10px;
+                     }       
+           }
+            h5 {
+                color: $mainColor;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               }
     }
  

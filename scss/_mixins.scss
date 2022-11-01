@@ -7,9 +7,13 @@
     border: none;
     background: none;
     outline: 0;
-    color: $mainColor;
-    border-bottom: 1px solid $orange;
+    color: antiquewhite;
+    border-bottom: 1px solid orange;
 }
 button,input,textarea {
     @include butt-input-texta (100%,0.7em);  //mixin
 }
+
+
+
+

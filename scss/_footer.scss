@@ -1,19 +1,16 @@
 .pie {
-    display: flex;
-    background: $secondaryColor;
-    color: $mainColor;
-    justify-content: space-evenly;
-    padding: 15px;
-      } 
+       display: flex;
+       background: $terciaryColor;
+       color: $mainColor;
+       justify-content: space-evenly;
+     } 
  .derechos {
-    display: flex;
-    margin: 2px;
-    color: $mainColor;
-    justify-content:$justifyContent;
-    align-items: $alignitems;
- }
- .pie h3 {
-    margin-top: 15px;
- }
+           display: flex;
+           color: $mainColor;
+           justify-content:$justifyContent;
+           align-items: $alignitems;
+           background-color: $secondaryColor;
+           }
+
 
  
